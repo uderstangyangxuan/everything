@@ -7,3 +7,15 @@ spring:
     banner-mode: off
   application:
     name: custom
+
+mqtt:
+  url: tcp://localhost:1883
+  username: admin
+  password: public
+  keep-alive: 30
+  connection-timeout: 3000
+  producerClientId:  test-producer
+  producerQos: 1
+  consumerClientId: test-consumer
+  consumerQos: 1
+  deafultTopic : test
